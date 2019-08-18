@@ -15,19 +15,26 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+        <link rel="stylesheet" href="js/viewerjs/viewer.min.css">
+        <script src="js/viewerjs/viewer.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <div id="background-gallery">
+            <div class="gallery">
+                <img src="" alt="">
+            </div> 
+        </div>
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="title">VladoGrcic</h1>
                 <nav>
                     <ul>
-                        <li><a class="active" href="">Home</a></li>
-                        <li><a href="contact">Contact</a></li>
+                        <li><a class="active" href="./">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -62,10 +69,12 @@
                                     This is a project I made as an example project to showcase my skills in Laravel and Vue js. It's a blog made with Laravel as the backend and Vue js for the front end UI. It is not finished. It has a functional backend with which you can create posts, categories, tags, languages and manage images, create folders on the server to put them in. The two images I provided you can see the media manager and the edit page for the categories. The edit pages for tags, languages are similar.
                                 </p>
                                 <div class="gallery">
-                                    <div class="image-gallery" style="background-image: url('img/custom-web-blog/Screenshot_2018-08-31 MANAGEMENT(2).png');" alt=""></div>
-                                    <div class="image-gallery" style="background-image: url('img/custom-web-blog/Screenshot_2019-03-06 Laravel.png');" alt=""></div>
-                                    <div class="image-gallery" style="background-image: url('img/custom-web-blog/Screenshot_2019-03-06 MANAGEMENT(1).png');" alt=""></div>
-                                    <div class="image-gallery" style="background-image: url('img/custom-web-blog/Screenshot_2019-03-06 MANAGEMENT.png');" alt=""></div>
+                                    
+                                    <div data-original="img/custom-web-blog/Screenshot_2018-08-31 MANAGEMENT(2).png" class="image-gallery" style="" alt=""><img src="img/custom-web-blog/Screenshot_2018-08-31 MANAGEMENT(2).png" alt=""></div>
+                                    <div data-original="img/custom-web-blog/Screenshot_2019-03-06 Laravel.png" class="image-gallery" alt=""><img src="img/custom-web-blog/Screenshot_2019-03-06 Laravel.png" width="250" alt=""></div>
+                                    <div data-original="img/custom-web-blog/Screenshot_2019-03-06 MANAGEMENT(1).png" class="image-gallery"><img src="img/custom-web-blog/Screenshot_2019-03-06 MANAGEMENT(1).png" width="250" alt=""></div>
+                                    <div data-original="img/custom-web-blog/Screenshot_2019-03-06 MANAGEMENT.png" class="image-gallery" alt=""><img src="img/custom-web-blog/Screenshot_2019-03-06 MANAGEMENT.png" width="250" alt=""></div>
+                                    <div data-original="img/custom-web-blog/custom-web-blog/Screenshot_2018-08-31 MANAGEMENT.png" class="image-gallery" alt=""><img src="img/custom-web-blog/Screenshot_2018-08-31 MANAGEMENT.png" width="250" alt=""></div>
                                 </div>
                             </div>
                             <div>
@@ -93,7 +102,9 @@
                                     <a href="https://github.com/vladogrcic/generatepress-child_car-rental">Generatepress Child Car Rental</a>
                                 </p>
                                 <div class="gallery">
-                                    <div class="image-gallery" style="background-image: url('img/car-rental/Screenshot_2019-03-06 Cars - Car Rental(1).png');" alt=""></div>
+                                    <!-- <div class="image-gallery" style="background-image: url('img/car-rental/Screenshot_2019-03-06 Cars - Car Rental(1).png');" alt=""></div> -->
+                                    <div data-original="img/car-rental/Screenshot_2019-03-06 Cars - Car Rental(1).png" class="image-gallery" style="" alt=""><img src="img/car-rental/Screenshot_2019-03-06 Cars - Car Rental(1).png" width="250" alt=""></div>
+                                    <div data-original="img/car-rental/Screenshot_2019-03-06 Cars - Car Rental.png" class="image-gallery" style="" alt=""><img src="img/car-rental/Screenshot_2019-03-06 Cars - Car Rental.png" width="250" alt=""></div>
                                 </div>
                             </div>
                             <div>
@@ -120,7 +131,9 @@
                                         I developed the site using Wordpress as a custom theme build from scratch with pure CSS3 and some Javascript elements. Using designs provided by the client in PSDs. With client replacing placeholder text and doing finishing CSS work.
                                 </p>
                                 <div class="gallery">
-                                    <div class="image-gallery" style="background-image: url('img/pantaisentralpark/Screen Shot 2018-08-28 at 17.49.10-fullpage.jpeg'); background-position: top;" alt=""></div>
+                                    <!-- <div class="image-gallery" style="background-image: url('img/pantaisentralpark/Screen Shot 2018-08-28 at 17.49.10-fullpage.jpeg'); background-position: top;" alt=""></div> -->
+                                    <div data-original="img/pantaisentralpark/Screen Shot 2018-08-28 at 17.49.10-fullpage.jpeg" class="image-gallery" style="" alt=""><img src="img/pantaisentralpark/Screen Shot 2018-08-28 at 17.49.10-fullpage.jpeg" width="250" alt=""></div>
+                                    <div data-original="img/pantaisentralpark/screencapture-pantaisentralpark-1506938893948.jpeg" class="image-gallery" style="" alt=""><img src="img/pantaisentralpark/screencapture-pantaisentralpark-1506938893948.jpeg" width="250" alt=""></div>
                                 </div>
                             </div>
                             <div>
@@ -145,9 +158,14 @@
                                     I made this site with the generatepress theme which I customized to my clients specifications using a child theme. It has WooCommerce installed for eCommerce functionality. It was made in about week with one more for some further customizations.
                                 </p>
                                 <div class="gallery">
-                                    <div class="image-gallery" style="background-image: url('img/keoproducts/Screenshot_2019-07-17 Homepage - Keo Products 2.jpg');" alt=""></div>
+                                    <!-- <div class="image-gallery" style="background-image: url('img/keoproducts/Screenshot_2019-07-17 Homepage - Keo Products 2.jpg');" alt=""></div>
                                     <div class="image-gallery" style="background-image: url('img/keoproducts/Screenshot_2019-07-17 Keo Disc pipe - Keo Products.png');" alt=""></div>
-                                    <div class="image-gallery" style="background-image: url('img/keoproducts/Screenshot_2019-07-17 Products - Keo Products.png');" alt=""></div>
+                                    <div class="image-gallery" style="background-image: url('img/keoproducts/Screenshot_2019-07-17 Products - Keo Products.png');" alt=""></div> -->
+
+                                    <div data-original="img/keoproducts/Screenshot_2019-07-17 Homepage - Keo Products 2.jpg" class="image-gallery" style="" alt=""><img src="img/keoproducts/Screenshot_2019-07-17 Homepage - Keo Products 2.jpg" width="250" alt=""></div>
+                                    <div data-original="img/keoproducts/Screenshot_2019-07-17 Keo Disc pipe - Keo Products.png" class="image-gallery" style="" alt=""><img src="img/keoproducts/Screenshot_2019-07-17 Keo Disc pipe - Keo Products.png" width="250" alt=""></div>
+                                    <div data-original="img/pantaisentralpark/keoproducts/Screenshot_2019-07-17 Products - Keo Products.png" class="image-gallery" style="" alt=""><img src="img/keoproducts/Screenshot_2019-07-17 Products - Keo Products.png" width="250" alt=""></div>
+                                    <div data-original="img/pantaisentralpark/keoproducts/Screenshot_2019-07-17 Homepage - Keo Products.jpg" class="image-gallery" style="" alt=""><img src="img/keoproducts/Screenshot_2019-07-17 Homepage - Keo Products.jpg" width="250" alt=""></div>
                                 </div>
                             </div>
                             <div>
@@ -158,6 +176,7 @@
                 </article>
 
             </div> <!-- #main -->
+            
         </div> <!-- #main-container -->
 
         <div class="footer-container">

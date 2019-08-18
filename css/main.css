@@ -408,7 +408,6 @@ nav a:hover {
 
 .portfolio-item.row > section{
     width: 35%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
@@ -445,14 +444,24 @@ nav a:hover {
     width: 100%;
     margin-bottom: 65px;
 }
+
+.portfolio-item.row > header > div > div.gallery img{
+    width: 220px;
+    object-fit: cover;
+    height: 235px;
+    cursor: pointer;
+}
 .portfolio-item.row > header > div > div.gallery > div.image-gallery{
-    width: 180px;
-    height: 150px;
+    width: 220px;
+    height: 235px;
+    max-height: 250px;
     background-size: cover;
     background-position: center;
     display: inline-block;
     border: 1px solid lightgrey;
     margin-right: 8px;
+    overflow: hidden;
+    background-color: rgb(233, 247, 255);
 }
 .portfolio-item.row > header{
     width: 60%;
@@ -567,4 +576,51 @@ nav a.active {
         margin: 5px;
         height: 180px;
     }
+}
+#background-gallery{
+    position: fixed;
+    background-color: #000;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 9999;
+    display: none;
+}
+#background-gallery .gallery img{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    /* height: 150px; */
+    width: 860px;
+    object-fit: contain;
+    object-position: center;
+}
+.contact{
+    color: rgb(95, 95, 95);
+    background-color: white;
+    border: #999 1px solid;
+    padding: 0!important;
+}
+.contact a{
+    padding: 25px!important;
+    color: rgb(95, 95, 95);
+}
+.contact > main{
+    padding-left: 125px!important;
+    padding: 125px;
+}
+.contact > main > ul{
+    padding: 0;
+}
+.contact > main > ul > li{
+    display: inline-block;
+    min-width: 150px;
+}
+.contact > header{
+    width: 100%;
+    height: 150px;
+    padding-top: 55px;
+    text-align: center;
 }
